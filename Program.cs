@@ -6,9 +6,6 @@ using System.Runtime.InteropServices;
 using System.Threading;
 using System.Timers;
 using System.Windows.Forms;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-using Timer = System.Windows.Forms.Timer;
-
 
 namespace WinFormsApp1
 {
@@ -169,14 +166,12 @@ namespace WinFormsApp1
             }
             else
             {
-                //MessageBox.Show("Game not found.");
                 this.Close();
             }
         }
 
         private void ShowOverlay()
         {
-           
                 if (gameHandle != IntPtr.Zero)
                 {
                     Rectangle rect;
@@ -192,7 +187,6 @@ namespace WinFormsApp1
                     int overlayX = rect.Left + offsetX;
                     int overlayY = rect.Top + offsetY;
 
-                    // Ensure the overlay stays within the game window bounds
                     if (overlayX + overlayWidth > rect.Right)
                     {
                         overlayX = rect.Right - overlayWidth;
@@ -210,89 +204,18 @@ namespace WinFormsApp1
                 }
                     else
                     {
-                        //MessageBox.Show("Failed to get game window position.");
                         this.Close();
                     }
                 }
                 else
                 {
-                    //MessageBox.Show("Game window handle not found.");
                     this.Close();
                 }
-            
-        }
-
-        protected override void OnPaint(PaintEventArgs e)
-        {
-            // Draw text
-            base.OnPaint(e);
-
-            /*using (Pen pen = new Pen(Color.White, 1))
-            {
-                e.Graphics.DrawRectangle(pen, new Rectangle(0, 0, Width - 1, Height - 1));
-            }*/
-
-            using (Font font = new Font("Arial", 12))
-            {
-
-                int amount = 40;
-                int pastF10Offset = 3;
-                for (var i = 0; i < 12; i++) 
-                {
-
-                    e.Graphics.DrawString("F" + (i + 1) + " ", font, Brushes.White, new Point(((i + (amount - 2))), 25));
-
-                    // Load and draw the image from a file
-                    string imagePath = Path.Combine(Application.StartupPath, "Assets", (i+1)+".png");
-                    if (File.Exists(imagePath))
-                    {
-                        using (Image image = Image.FromFile(imagePath))
-                        {
-                            Rectangle imageRect = new Rectangle((i + amount), 50, image.Width, image.Height);
-
-                            e.Graphics.DrawImage(image, new Point((i + amount), 50));
-
-                            using (Pen pen = new Pen(Color.White, 1))
-                            {
-                                e.Graphics.DrawRectangle(pen, imageRect);
-                            }
-                            
-                        }
-                    }
-
-                    amount += 40;
-                }
- 
-            }
-        }
-
-        protected override void OnPaintBackground(PaintEventArgs e)
-        {
-            // Do not paint background to make it transparent
-        }
-
-        private void NotifyIcon_MouseClick(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Left)
-            {
-                this.Show();
-                this.WindowState = FormWindowState.Normal;
-            }
         }
 
         private void OnExit(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        protected override void OnFormClosing(FormClosingEventArgs e)
-        {
-            if (e.CloseReason == CloseReason.UserClosing)
-            {
-                e.Cancel = true;  // Cancel the default action
-                this.Hide();      // Hide the form instead of closing
-            }
-            base.OnFormClosing(e);
         }
 
         protected override void Dispose(bool disposing)
@@ -312,12 +235,6 @@ namespace WinFormsApp1
                 createParams.ExStyle |= 0x00000020; // WS_EX_TRANSPARENT
                 return createParams;
             }
-        }
-
-        protected override void SetVisibleCore(bool value)
-        {
-            // Ensure that the window is always visible
-            base.SetVisibleCore(true);
         }
 
         private void Program_MouseDown(object sender, MouseEventArgs e)

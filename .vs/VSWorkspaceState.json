@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Assets",
+    "\\bin",
+    "\\bin\\Release",
+    "\\bin\\Release\\net8.0-windows",
+    "\\bin\\Release\\net8.0-windows\\Assets"
   ],
-  "SelectedNode": "\\MeridianSpellOrders.csproj",
+  "SelectedNode": "\\bin\\Release\\net8.0-windows\\Assets\\create_food.png",
   "PreviewInSolutionExplorer": false
 }

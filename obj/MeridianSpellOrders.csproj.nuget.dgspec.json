@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Matheus\\source\\repos\\WinFormsApp1\\WinFormsApp1\\MeridianSpellOrders.csproj": {}
+    "D:\\Github\\Meridian59SpellOrder\\Meridian59SpellOrder\\MeridianSpellOrders.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Matheus\\source\\repos\\WinFormsApp1\\WinFormsApp1\\MeridianSpellOrders.csproj": {
+    "D:\\Github\\Meridian59SpellOrder\\Meridian59SpellOrder\\MeridianSpellOrders.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Matheus\\source\\repos\\WinFormsApp1\\WinFormsApp1\\MeridianSpellOrders.csproj",
+        "projectUniqueName": "D:\\Github\\Meridian59SpellOrder\\Meridian59SpellOrder\\MeridianSpellOrders.csproj",
         "projectName": "MeridianSpellOrders",
-        "projectPath": "C:\\Users\\Matheus\\source\\repos\\WinFormsApp1\\WinFormsApp1\\MeridianSpellOrders.csproj",
+        "projectPath": "D:\\Github\\Meridian59SpellOrder\\Meridian59SpellOrder\\MeridianSpellOrders.csproj",
         "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Matheus\\source\\repos\\WinFormsApp1\\WinFormsApp1\\obj\\",
+        "outputPath": "D:\\Github\\Meridian59SpellOrder\\Meridian59SpellOrder\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Matheus\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -85,3 +85,4 @@ D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\obj\Release\net8.0-windows\r
 D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\obj\Release\net8.0-windows\MeridianSpellOrders.pdb
 D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\obj\Release\net8.0-windows\MeridianSpellOrders.genruntimeconfig.cache
 D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\obj\Release\net8.0-windows\ref\MeridianSpellOrders.dll
+D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\obj\Release\net8.0-windows\MeridianSpellOrders.sourcelink.json

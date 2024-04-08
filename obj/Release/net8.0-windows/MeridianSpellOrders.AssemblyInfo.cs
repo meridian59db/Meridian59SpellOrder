@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MeridianSpellOrders")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fab472d6f77c0b8b1e01fc35bdbe24cba016dd27")]
 [assembly: System.Reflection.AssemblyProductAttribute("MeridianSpellOrders")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MeridianSpellOrders")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

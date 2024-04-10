@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\Github\\Meridian59SpellOrder\\Meridian59SpellOrder\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Github\\Meridian59SpellOrder\\Meridian59SpellOrder\\Setup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Setup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{98979E65-CE81-438E-9683-0F066850FF2E}|MeridianSpellOrders.csproj|D:\\Github\\Meridian59SpellOrder\\Meridian59SpellOrder\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98979E65-CE81-438E-9683-0F066850FF2E}|MeridianSpellOrders.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Github\\Meridian59SpellOrder\\Meridian59SpellOrder\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{98979E65-CE81-438E-9683-0F066850FF2E}|MeridianSpellOrders.csproj|d:\\github\\meridian59spellorder\\meridian59spellorder\\setup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98979E65-CE81-438E-9683-0F066850FF2E}|MeridianSpellOrders.csproj|solutionrelative:setup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,28 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Github\\Meridian59SpellOrder\\Meridian59SpellOrder\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Github\\Meridian59SpellOrder\\Meridian59SpellOrder\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAABsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T06:22:17.701Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Setup.cs",
               "DocumentMoniker": "D:\\Github\\Meridian59SpellOrder\\Meridian59SpellOrder\\Setup.cs",
               "RelativeDocumentMoniker": "Setup.cs",
               "ToolTip": "D:\\Github\\Meridian59SpellOrder\\Meridian59SpellOrder\\Setup.cs",
               "RelativeToolTip": "Setup.cs",
-              "ViewState": "AQIAAJwBAAAAAAAAAAAAAEcAAAA5AAAA",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAQwFYAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T17:54:42.238Z",
+              "WhenOpened": "2024-04-09T03:51:14.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Github\\Meridian59SpellOrder\\Meridian59SpellOrder\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Github\\Meridian59SpellOrder\\Meridian59SpellOrder\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAABMBAAAAAAAAAAAQwCkBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T03:44:14.813Z",
               "EditorCaption": ""
             }
           ]

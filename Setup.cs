@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Windows.Forms;
 using System.Linq;
 using System.Diagnostics;
@@ -11,49 +11,177 @@ namespace WinFormsApp1
 {
     public partial class Setup : Form
     {
-        private ComboBox comboBoxSpells_F1;
-        private ComboBox comboBoxSpells_F2;
-        private ComboBox comboBoxSpells_F3;
-        private ComboBox comboBoxSpells_F4;
-        private ComboBox comboBoxSpells_F5;
-        private ComboBox comboBoxSpells_F6;
-        private ComboBox comboBoxSpells_F7;
-        private ComboBox comboBoxSpells_F8;
-        private ComboBox comboBoxSpells_F9;
-        private ComboBox comboBoxSpells_F10;
-        private ComboBox comboBoxSpells_F11;
-        private ComboBox comboBoxSpells_F12;
+        private ComboBox? comboBoxSpells_F1;
+        private ComboBox? comboBoxSpells_F2;
+        private ComboBox? comboBoxSpells_F3;
+        private ComboBox? comboBoxSpells_F4;
+        private ComboBox? comboBoxSpells_F5;
+        private ComboBox? comboBoxSpells_F6;
+        private ComboBox? comboBoxSpells_F7;
+        private ComboBox? comboBoxSpells_F8;
+        private ComboBox? comboBoxSpells_F9;
+        private ComboBox? comboBoxSpells_F10;
+        private ComboBox? comboBoxSpells_F11;
+        private ComboBox? comboBoxSpells_F12;
 
         public List<Spell> SelectedSpells { get; set; }
 
-        private Button buttonSave;
-        public event EventHandler WindowClosing;
+        private Button? buttonSave;
+        public event EventHandler? WindowClosing;
 
-        private static readonly Spell[] arrayOfSpells = new Spell[]
+        private static readonly Spell[] arrayOfSpells =
+        [
+            new Spell(School.KRANAAN, "empty", "Empty"),
+            // Kranaan
+            new Spell(School.KRANAAN, "", GetSeparator("Kranaan")),
+            new Spell(School.KRANAAN, "anti_magic_aura", "Anti-Magic Aura"),
+            new Spell(School.KRANAAN, "armor_of_gort", "Armor of Gort"),
+            new Spell(School.KRANAAN, "bless", "Bless"),
+            new Spell(School.KRANAAN, "blink", "Blink"),
+            new Spell(School.KRANAAN, "create_food", "Create Food"),
+            new Spell(School.KRANAAN, "create_weapon", "Create Weapon"),
+            new Spell(School.KRANAAN, "deflect", "Deflect"),
+            new Spell(School.KRANAAN, "detect_invisible", "Detect Invisible"),
+            new Spell(School.KRANAAN, "discordance", "Discordance"),
+            new Spell(School.KRANAAN, "dispell_illusion", "Dispel Illusion"),
+            new Spell(School.KRANAAN, "eagle_eyes", "Eagle Eyes"),
+            new Spell(School.KRANAAN, "enchant_weapon", "Enchant Weapon"),
+            new Spell(School.KRANAAN, "free_action", "Free Action"),
+            new Spell(School.KRANAAN, "glow", "Glow"),
+            new Spell(School.KRANAAN, "haste", "Haste"),
+            new Spell(School.KRANAAN, "hunt", "Hunt"),
+            new Spell(School.KRANAAN, "killing_fields", "Killing Fields"),
+            new Spell(School.KRANAAN, "magic_shield", "Magic Shield"),
+            new Spell(School.KRANAAN, "mana_bomb", "Mana Bomb"),
+            new Spell(School.KRANAAN, "martyrs_battleground", "Martyr's Battleground"),
+            new Spell(School.KRANAAN, "mend", "Mend"),
+            new Spell(School.KRANAAN, "night_vision", "Night Vision"),
+            new Spell(School.KRANAAN, "relay", "Relay"),
+            new Spell(School.KRANAAN, "resist_magic", "Resist Magic"),
+            new Spell(School.KRANAAN, "resist_poison", "Resist Poison"),
+            new Spell(School.KRANAAN, "shatterlock", "Shatterlock"),
+            new Spell(School.KRANAAN, "shroud", "Shroud"),
+            new Spell(School.KRANAAN, "super_strength", "Super Strength"),
+            // Jala
+            new Spell(School.QOR, "", GetSeparator("Jala")),
+            new Spell(School.JALA, "civility", "Civility"),
+            new Spell(School.JALA, "conciliation", "Conciliation"),
+            new Spell(School.JALA, "crystalize_mana", "Crystalize Mana"),
+            new Spell(School.JALA, "disharmony", "Disharmony"),
+            new Spell(School.JALA, "distill", "Distill"),
+            new Spell(School.JALA, "invigorate", "Invigorate"),
+            new Spell(School.JALA, "jig", "Jig"),
+            new Spell(School.JALA, "mana_convergence", "Mana Convergence"),
+            new Spell(School.JALA, "melancholy", "Melancholy"),
+            new Spell(School.JALA, "mirth", "Mirth"),
+            new Spell(School.JALA, "profane_resonance", "Profane Resonance"),
+            new Spell(School.JALA, "rejuvenate", "Rejuvenate"),
+            new Spell(School.JALA, "restorate", "Restorate"),
+            new Spell(School.JALA, "sacred_resonance", "Sacred Resonance"),
+            new Spell(School.JALA, "spellbane", "Spellbane"),
+            new Spell(School.JALA, "truth", "Truth"),
+            new Spell(School.JALA, "warp_time", "Warp Time"),
+            // Qor
+            new Spell(School.QOR, "", GetSeparator("Qor")),
+            new Spell(School.QOR, "acid_touch", "Acid Touch"),
+            new Spell(School.QOR, "animate", "Animate"),
+            new Spell(School.QOR, "blind", "Blind"),
+            new Spell(School.QOR, "blood_inheritance", "Blood Inheritance"),
+            new Spell(School.QOR, "cloak", "Cloak"),
+            new Spell(School.QOR, "curse_weapon", "Curse Weapon"),
+            new Spell(School.QOR, "darkness", "Darkness"),
+            new Spell(School.QOR, "death_link", "Death Link"),
+            new Spell(School.QOR, "defile", "Defile"),
+            new Spell(School.QOR, "detect_good", "Detect Good"),
+            new Spell(School.QOR, "enfeeble", "Enfeeble"),
+            new Spell(School.QOR, "fade", "Fade"),
+            new Spell(School.QOR, "gaze_of_the_basilisk", "Gaze of the Basilisk"),
+            new Spell(School.QOR, "hold", "Hold"),
+            new Spell(School.QOR, "invisibility", "Invisibility"),
+            new Spell(School.QOR, "karahols_curse", "Karahols Curse"),
+            new Spell(School.QOR, "node_burst", "Node Burst"),
+            new Spell(School.QOR, "poison_fog", "Poison Fog"),
+            new Spell(School.QOR, "shadow_rift", "Shadow Rift"),
+            new Spell(School.QOR, "shalille_bane", "Shalille Bane"),
+            new Spell(School.QOR, "silence", "Silence"),
+            new Spell(School.QOR, "splash_of_acid", "Splash of Acid"),
+            new Spell(School.QOR, "swap", "Swap"),
+            new Spell(School.QOR, "unholy_resolve", "Unholy Resolve"),
+            new Spell(School.QOR, "unholy_weapon", "Unholy Weapon"),
+            new Spell(School.QOR, "vampiric_drain", "Vampiric Drain"),
+
+            // Shal'ille
+            new Spell(School.SHALILLE, "", GetSeparator("Sha'ille")),
+            new Spell(School.SHALILLE, "bond", "Bond"),
+            new Spell(School.SHALILLE, "breath_of_life", "Breath of Life"),
+            new Spell(School.SHALILLE, "cure_disease", "Cure Disease"),
+            new Spell(School.SHALILLE, "cure_poison", "Cure Poison"),
+            new Spell(School.SHALILLE, "dazzle", "Dazzle"),
+            new Spell(School.SHALILLE, "detect_evil", "Detect Evil"),
+            new Spell(School.SHALILLE, "final_rites", "Final Rites"),
+            new Spell(School.SHALILLE, "forces_of_light", "Forces of Light"),
+            new Spell(School.SHALILLE, "holy_resolve", "Holy Resolve"),
+            new Spell(School.SHALILLE, "holy_symbol", "Holy Symbol"),
+            new Spell(School.SHALILLE, "holy_touch", "Holy Touch"),
+            new Spell(School.SHALILLE, "holy_weapon", "Holy Weapon"),
+            new Spell(School.SHALILLE, "hospice", "Hospice"),
+            new Spell(School.SHALILLE, "identify", "Identify"),
+            new Spell(School.SHALILLE, "major_heal", "Major Heal"),
+            new Spell(School.SHALILLE, "mark_of_dishonor", "Mark of Dishonor"),
+            new Spell(School.SHALILLE, "minor_heal", "Minor Heal"),
+            new Spell(School.SHALILLE, "portal_of_life", "Portal of Life"),
+            new Spell(School.SHALILLE, "purge", "Purge"),
+            new Spell(School.SHALILLE, "purify", "Purify"),
+            new Spell(School.SHALILLE, "qorbane", "Qorbane"),
+            new Spell(School.SHALILLE, "remove_curse", "Rescue"),
+            new Spell(School.SHALILLE, "resist_acid", "Resist Acid"),
+            new Spell(School.SHALILLE, "reveal", "Reveal"),
+            new Spell(School.SHALILLE, "seance", "Seance"),
+            //Faren
+            new Spell(School.FAREN, "", GetSeparator("Faren")),
+            new Spell(School.FAREN, "blast_of_fire", "Blast of Fire"),
+            new Spell(School.FAREN, "bramble_wall", "Bramble Wall"),
+            new Spell(School.FAREN, "brittle", "Brittle"),
+            new Spell(School.FAREN, "earthquake", "Earthquake"),
+            new Spell(School.FAREN, "explosive_frost", "Explosive Frost"),
+            new Spell(School.FAREN, "fireball", "Fireball"),
+            new Spell(School.FAREN, "firewall", "Firewall"),
+            new Spell(School.FAREN, "fog", "Fog"),
+            new Spell(School.FAREN, "heat", "Heat"),
+            new Spell(School.FAREN, "icy_fingers", "Icy Fingers"),
+            new Spell(School.FAREN, "light", "Light"),
+            new Spell(School.FAREN, "lightning_bolt", "Lightning Bolt"),
+            new Spell(School.FAREN, "lightning_wall", "Lightning Wall"),
+            new Spell(School.FAREN, "mana_focus", "Mana Focus"),
+            new Spell(School.FAREN, "mystic_touch", "Mystic Touch"),
+            new Spell(School.FAREN, "resist_shock", "Resist Shock"),
+            new Spell(School.FAREN, "ring_of_flames", "Ring of Flames"),
+            new Spell(School.FAREN, "sand_storm", "Sand Storm"),
+            new Spell(School.FAREN, "shatter", "Shatter"),
+            new Spell(School.FAREN, "shocking_fury", "Shocking Fury"),
+            new Spell(School.FAREN, "spider_web", "Spider Web"),
+            new Spell(School.FAREN, "spore_burst", "Spore Burst"),
+            new Spell(School.FAREN, "sweep", "Sweep"),
+            new Spell(School.FAREN, "touch_of_flame", "Touch of Flame"),
+            new Spell(School.FAREN, "winds", "Winds"),
+            new Spell(School.FAREN, "withstand_fire", "Withstand Fire"),
+            new Spell(School.FAREN, "zap", "Zap")
+        ];
+
+         private static string GetSeparator(string text)
         {
-            new Spell(0, School.KRANAAN, "create_weapon", "Create Weapon"),
-            new Spell(1, School.KRANAAN, "create_food", "Create Food"),
-            new Spell(2, School.KRANAAN, "bless", "Bless"),
-            new Spell(3, School.KRANAAN, "super_strength", "Super Strength"),
-            new Spell(4, School.KRANAAN, "blink", "Blink"),
-            new Spell(5, School.KRANAAN, "deflect", "Deflect"),
-            new Spell(6, School.KRANAAN, "detect_invisible", "Detect Invisible"),
-            new Spell(7, School.KRANAAN, "discordance", "Discordance"),
-            new Spell(8, School.KRANAAN, "dispell_illusion", "Dispel Illusion"),
-            new Spell(9, School.KRANAAN, "eagle_eyes", "Eagle Eyes"),
-            new Spell(10, School.KRANAAN, "enchant_weapon", "Enchant Weapon"),
-            new Spell(11, School.KRANAAN, "free_action", "Free Action"),
-            new Spell(12, School.KRANAAN, "glow", "Glow"),
-            new Spell(13, School.KRANAAN, "haste", "Haste"),
-            new Spell(14, School.KRANAAN, "magic_shield", "Magic Shield"),
-            new Spell(15, School.KRANAAN, "mana_bomb", "Mana Bomb"),
-            new Spell(16, School.KRANAAN, "martyrs_battleground", "Martyr's Battleground"),
-            new Spell(17, School.KRANAAN, "mend", "Mend"),
-            new Spell(18, School.KRANAAN, "night_vision", "Night Vision"),
-            new Spell(19, School.KRANAAN, "relay", "Relay"),
-            new Spell(20, School.KRANAAN, "resist_poison", "Resist Poison"),
-            new Spell(21, School.KRANAAN, "shroud", "Shroud"),
-        };
+            // Calculate the length of the separator based on the width of the ComboBox
+            int separatorLength = 32 - 4;
+
+            // Ensure the separator length is at least the length of the text plus padding
+            if (separatorLength < text.Length)
+            {
+                separatorLength = text.Length + 4;
+            }
+
+            // Construct the separator with the input text
+            return "─" + new string('─', (separatorLength - text.Length) / 2) + "┤" + text+ "├" + new string('─', (separatorLength - text.Length + 1) / 2) + "─";
+        }
 
         /// <summary>
         /// Gets specific skill by an Alias
@@ -61,21 +189,21 @@ namespace WinFormsApp1
         /// <param name="bind">The binding of the skill.</param>
         /// <param name="selectingVariable">The Spell we are selecting on the Combo Box.</param>
         /// <param name="y">The y positioning of the Combo Box.</param>
-        private static Spell getSpellByAlias(string SkillName)
+        private static Spell? GetSpellByAlias(string SkillName)
         {
             Spell targetSpell = arrayOfSpells.FirstOrDefault(spell => spell.Alias == SkillName);
 
             if (targetSpell != null)
             {
                 // Found the spell, do something with it
-                return targetSpell;
                 Console.WriteLine($"Spell found: {targetSpell.Name}");
+                return targetSpell;
             }
             else
             {
                 // Spell not found
-                return null;
                 Console.WriteLine("Spell not found.");
+                return null;
             }
         }
 
@@ -83,27 +211,27 @@ namespace WinFormsApp1
         /// Gets specific skill by a Name
         /// </summary>
         /// <param name="SkillName">The name of the skill.</param>
-        private static Spell getSpellByName(string SkillName)
+        private static Spell? GetSpellByName(string SkillName)
         {
             Spell targetSpell = arrayOfSpells.FirstOrDefault(spell => spell.Name == SkillName);
 
             if (targetSpell != null)
             {
                 // Found the spell, do something with it
-                return targetSpell;
                 Console.WriteLine($"Spell found: {targetSpell.Name}");
+                return targetSpell;
             }
             else
             {
                 // Spell not found
-                return null;
                 Console.WriteLine("Spell not found.");
+                return null;
             }
         }
 
         public Setup()
         {
-            SelectedSpells = new List<Spell>();
+            SelectedSpells = [];
 
             LoadData();
             InitializeComponent();
@@ -112,7 +240,7 @@ namespace WinFormsApp1
             this.FormClosing += Setup_FormClosing;
         }
 
-        private Spell LoadDataByKey(string keyToLoad)
+        private static Spell? LoadDataByKey(string keyToLoad)
         {
             string filePath = Path.Combine(Application.StartupPath, "", "data.ini"); ;
             Dictionary<string, string> iniData = IniFileReader.LoadIniFile(filePath);
@@ -124,7 +252,7 @@ namespace WinFormsApp1
                 
                 if (entry.Key == keyToLoad)
                 {
-                    Spell theSpell = getSpellByName(entry.Value);
+                    Spell theSpell = GetSpellByName(entry.Value);
 
                     if (theSpell != null)
                     {
@@ -135,6 +263,9 @@ namespace WinFormsApp1
             return null;
         }
 
+        /// <summary>
+        /// Loads the data for the file
+        /// </summary>
         public static List<Spell> LoadData()
         {
             string filePath = Path.Combine(Application.StartupPath, "", "data.ini");
@@ -142,10 +273,10 @@ namespace WinFormsApp1
 
             List<Spell> spells = new List<Spell>();
 
-            // Iterar pelos valores do dicion�rio e criar inst�ncias de Spell
+            // Iterar pelos valores do dicionário e criar instâncias de Spell
             foreach (string spellName in iniData.Values)
             {
-                Spell spell = getSpellByName(spellName);
+                Spell spell = GetSpellByName(spellName);
                 if (spell != null)
                 {
                     spells.Add(spell);
@@ -162,41 +293,36 @@ namespace WinFormsApp1
         {
             this.SuspendLayout();
 
-            // Creating a Panel to contain the ComboBox and Label
-            /*Panel panel = new Panel();
-            panel.Location = new Point(50, 50);
-            panel.Size = new Size(200, 70);
-            this.Controls.Add(panel);*/
-
             // the combo boxes
-            comboBoxSpells_F1 = addComboBox("F1", 0);
-            comboBoxSpells_F2 = addComboBox("F2", 30);
-            comboBoxSpells_F3 = addComboBox("F3", 60);
-            comboBoxSpells_F4 = addComboBox("F4", 90);
-            comboBoxSpells_F5 = addComboBox("F5", 120);
-            comboBoxSpells_F6 = addComboBox("F6", 150);
-            comboBoxSpells_F7 = addComboBox("F7", 180);
-            comboBoxSpells_F8 = addComboBox("F8", 210);
-            comboBoxSpells_F9 = addComboBox("F9", 240);
-            comboBoxSpells_F10 = addComboBox("F10", 270);
-            comboBoxSpells_F11 = addComboBox("F11", 300);
-            comboBoxSpells_F12 = addComboBox("F12", 330);
+            comboBoxSpells_F1 = AddComboBox("F1", 0);
+            comboBoxSpells_F2 = AddComboBox("F2", 30);
+            comboBoxSpells_F3 = AddComboBox("F3", 60);
+            comboBoxSpells_F4 = AddComboBox("F4", 90);
+            comboBoxSpells_F5 = AddComboBox("F5", 120);
+            comboBoxSpells_F6 = AddComboBox("F6", 150);
+            comboBoxSpells_F7 = AddComboBox("F7", 180);
+            comboBoxSpells_F8 = AddComboBox("F8", 210);
+            comboBoxSpells_F9 = AddComboBox("F9", 240);
+            comboBoxSpells_F10 = AddComboBox("F10", 270);
+            comboBoxSpells_F11 = AddComboBox("F11", 300);
+            comboBoxSpells_F12 = AddComboBox("F12", 330);
 
             // buttonSave
             buttonSave = new Button();
             buttonSave.Location = new System.Drawing.Point(50, 360);
             buttonSave.Size = new System.Drawing.Size(150, 30);
             buttonSave.Text = "Save";
+            
             // Subscribe to the Click event of the button
             buttonSave.Click += ButtonSave_Click;
             this.Controls.Add(buttonSave);
 
-            this.ClientSize = new System.Drawing.Size(250, 390);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.ClientSize = new Size(250, 390);
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "SecondaryForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.Text = "Setup";
             this.ResumeLayout(false);
         }
@@ -207,9 +333,9 @@ namespace WinFormsApp1
         /// <param name="bind">The binding of the skill.</param>
         /// <param name="panel">The panel holding the Combo Box.</param>
         /// <param name="y">The y positioning of the Combo Box.</param>
-        private ComboBox addComboBox(string bind, int y)
+        private ComboBox AddComboBox(string bind, int y)
         {
-            ComboBox comboBox = createComboBox(bind, y);
+            ComboBox comboBox = CreateComboBox(bind, y);
             this.Controls.Add(comboBox);
             return comboBox;
         }
@@ -219,14 +345,14 @@ namespace WinFormsApp1
         /// </summary>
         /// <param name="bind">The binding of the skill.</param>
         /// <param name="y">The y positioning of the Combo Box.</param>
-        private ComboBox createComboBox(string bind, int y)
+        private ComboBox CreateComboBox(string bind, int y)
         {
-            ComboBox newComboBox = new ComboBox();
-            newComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-            newComboBox.FormattingEnabled = true;
+            ComboBox newComboBox = new()
+            {
+                DropDownStyle = ComboBoxStyle.DropDownList,
+                FormattingEnabled = true
+            };
 
-            //newComboBox.Items.Add(bind+": Select a Spell");
-          
             // Add all the spells
             foreach (Spell spell in arrayOfSpells)
             {
@@ -244,45 +370,47 @@ namespace WinFormsApp1
                 SelectedSpells.Add(loadedSpell);
             }
 
-            // Assign the event handler using a lambda expression
-            /*newComboBox.SelectedIndexChanged += (sender, e) =>
+            // Subscribe to the SelectedIndexChanged event
+            newComboBox.SelectedIndexChanged += (sender, e) =>
             {
+                // Add your event handling logic here
+                var selectedItem = (string)newComboBox.SelectedItem;
 
-                // Check if the selected index is 0 (label) and handle accordingly
-                if (newComboBox.SelectedIndex == 0)
+                Spell spell = GetSpellByAlias(selectedItem);
+                if (spell != null)
                 {
-                    // For example, display a message or disable functionality
-                    newComboBox.SelectedIndex = 0;
-                    MessageBox.Show("Please select a spell.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    // Handle the case where a spell is selected
-                    // For example, enable functionality related to the selected spell
-                    ComboBox comboBox = (ComboBox)sender;
-                    string selectedValue = comboBox.SelectedItem?.ToString();
-                    Spell spell = getSpellByAlias(selectedValue);
-
-                    if (spell != null)
+                    // Check if the specific option is selected
+                    if (spell.Name == "")
                     {
-                        MessageBox.Show("selected " + spell.Name);
-                        
+                        // Revert the selection to the previous item or the first item
+                        if (newComboBox.Items.Count > 0)
+                        {
+                            newComboBox.SelectedIndex = 0;
+                        }
                     }
                 }
-            };*/
+            };
 
+            // Suppress mouse wheel event when over ComboBox
+            newComboBox.MouseWheel += (sender, e) =>
+            {
+                ((HandledMouseEventArgs)e).Handled = true;
+            };
 
-            newComboBox.Location = new System.Drawing.Point(30, y);
+            newComboBox.Location = new Point(30, y);
 
             // Add label
-            Label theLabel = new Label();
-            theLabel.Text = bind;
-            theLabel.Location = new System.Drawing.Point(0, y+3);
-            theLabel.AutoSize = false;
-            theLabel.Size = new Size(30, 20);
+            int offSetBindingLabel = 3;
+            Label theLabel = new()
+            {
+                Text = bind,
+                Location = new Point(0, y + offSetBindingLabel),
+                AutoSize = false,
+                Size = new Size(30, 20)
+            };
             this.Controls.Add(theLabel);
 
-            newComboBox.Size = new System.Drawing.Size(200, 21);
+            newComboBox.Size = new Size(200, 21);
             return newComboBox;
         }
 
@@ -308,13 +436,13 @@ namespace WinFormsApp1
             Dictionary<string, string> dataToSave = new Dictionary<string, string>();
 
             // Save the bindings data
-            string[] binds = new string[] { "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12" };
-            ComboBox[] comboBoxes = new ComboBox[] { comboBoxSpells_F1, comboBoxSpells_F2, comboBoxSpells_F3, comboBoxSpells_F4, comboBoxSpells_F5, comboBoxSpells_F6, comboBoxSpells_F7, comboBoxSpells_F8, comboBoxSpells_F9, comboBoxSpells_F10, comboBoxSpells_F11, comboBoxSpells_F12 };
+            //string[] binds = ["F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12"];
+            ComboBox[] comboBoxes = [comboBoxSpells_F1, comboBoxSpells_F2, comboBoxSpells_F3, comboBoxSpells_F4, comboBoxSpells_F5, comboBoxSpells_F6, comboBoxSpells_F7, comboBoxSpells_F8, comboBoxSpells_F9, comboBoxSpells_F10, comboBoxSpells_F11, comboBoxSpells_F12];
 
             // Parses the config
             for (int i = 0; i < comboBoxes.Length; i++)
             {
-                ParseConfig(dataToSave, comboBoxes[i], binds[i]);
+                ParseConfig(dataToSave, comboBoxes[i], "F"+(i+1));
             }
 
             try
@@ -329,7 +457,7 @@ namespace WinFormsApp1
                 }
 
                 // Show a message to indicate that data has been saved
-                MessageBox.Show("Data has been saved to data.ini", "Save", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Data has been saved", "Save", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
@@ -346,7 +474,7 @@ namespace WinFormsApp1
         {
             if (comboBox.SelectedItem != null)
             {
-                Spell spellToGet = getSpellByAlias(comboBox.SelectedItem.ToString());
+                Spell spellToGet = GetSpellByAlias(comboBox.SelectedItem.ToString());
                 if (spellToGet != null)
                 {
                     dataToSave.Add(bind, spellToGet.Name);
@@ -425,25 +553,17 @@ namespace WinFormsApp1
         QOR,
         SHALILLE,
         FAREN,
-        RIIJA
+        RIIJA,
+        JALA
     }
 
     /// <summary>
     /// Represents the Spell
     /// </summary>
-    public class Spell
+    public class Spell(School school, string name, string alias)
     {
-        public int Id { get; }
-        public string Name { get; }
-        public string Alias { get; }
-        public School School { get; }
-
-        public Spell(int id, School school, string name, string alias)
-        {
-            Id = id;
-            School = school;
-            Name = name;
-            Alias = alias;
-        }
+        public string Name { get; } = name;
+        public string Alias { get; } = alias;
+        public School School { get; } = school;
     }
 }

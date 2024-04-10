@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "/8zNHkavAevKcdCKtUqakaj8b+m0YJKIqEq6X9ZkRPzcqfY0qPlautVPtSE2hfqaFYhrpOv9qV7AjYl7t2XNUw==",
+  "success": true,
+  "projectFilePath": "D:\\Github\\Meridian59SpellOrder\\Meridian59SpellOrder\\MeridianSpellOrders.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Matheus\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.3\\microsoft.net.illink.tasks.8.0.3.nupkg.sha512",
+    "C:\\Users\\Matheus\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\8.0.3\\microsoft.netcore.app.runtime.win-x86.8.0.3.nupkg.sha512",
+    "C:\\Users\\Matheus\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\8.0.3\\microsoft.windowsdesktop.app.runtime.win-x86.8.0.3.nupkg.sha512",
+    "C:\\Users\\Matheus\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\8.0.3\\microsoft.aspnetcore.app.runtime.win-x86.8.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -6,64 +6,543 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Assets\1.png" />
-    <None Remove="Assets\10.png" />
-    <None Remove="Assets\11.png" />
-    <None Remove="Assets\12.png" />
-    <None Remove="Assets\2.png" />
-    <None Remove="Assets\3.png" />
-    <None Remove="Assets\4.png" />
-    <None Remove="Assets\5.png" />
-    <None Remove="Assets\6.png" />
-    <None Remove="Assets\7.png" />
-    <None Remove="Assets\8.png" />
-    <None Remove="Assets\9.png" />
+    <None Remove="Assets\acid_touch.png" />
+    <None Remove="Assets\animate.png" />
+    <None Remove="Assets\anti_magic_aura.png" />
+    <None Remove="Assets\armor_of_gort.png" />
+    <None Remove="Assets\blast_of_fire.png" />
+    <None Remove="Assets\bless.png" />
+    <None Remove="Assets\blind.png" />
+    <None Remove="Assets\blink.png" />
+    <None Remove="Assets\blood_inheritance.png" />
+    <None Remove="Assets\bond.png" />
+    <None Remove="Assets\bramble_wall.png" />
+    <None Remove="Assets\breath_of_life.png" />
+    <None Remove="Assets\brittle.png" />
+    <None Remove="Assets\civility.png" />
+    <None Remove="Assets\cloak.png" />
+    <None Remove="Assets\concilation.png" />
+    <None Remove="Assets\create_food.png" />
+    <None Remove="Assets\create_weapon.png" />
+    <None Remove="Assets\crystalize_mana.png" />
+    <None Remove="Assets\cure_disease.png" />
+    <None Remove="Assets\cure_poison.png" />
+    <None Remove="Assets\curse_weapon.png" />
+    <None Remove="Assets\darkness.png" />
+    <None Remove="Assets\dazzle.png" />
+    <None Remove="Assets\death_link.png" />
+    <None Remove="Assets\defile.png" />
+    <None Remove="Assets\deflect.png" />
+    <None Remove="Assets\detect_evil.png" />
+    <None Remove="Assets\detect_good.png" />
+    <None Remove="Assets\detect_invisible.png" />
+    <None Remove="Assets\discordance.png" />
+    <None Remove="Assets\disharmony.png" />
+    <None Remove="Assets\dispell_illusion.png" />
+    <None Remove="Assets\dispel_illusion.png" />
+    <None Remove="Assets\distill.png" />
+    <None Remove="Assets\eagle_eyes.png" />
+    <None Remove="Assets\earthquake.png" />
+    <None Remove="Assets\empty.png" />
+    <None Remove="Assets\enchant_weapon.png" />
+    <None Remove="Assets\enfeeble.png" />
+    <None Remove="Assets\explosive_frost.png" />
+    <None Remove="Assets\fade.png" />
     <None Remove="Assets\favicon.ico" />
+    <None Remove="Assets\final_rites.png" />
+    <None Remove="Assets\fireball.png" />
+    <None Remove="Assets\firewall.png" />
+    <None Remove="Assets\fog.png" />
+    <None Remove="Assets\forces_of_light.png" />
+    <None Remove="Assets\free_action.png" />
+    <None Remove="Assets\gaze_of_the_basilisk.png" />
+    <None Remove="Assets\glow.png" />
+    <None Remove="Assets\haste.png" />
+    <None Remove="Assets\heat.png" />
+    <None Remove="Assets\hold.png" />
+    <None Remove="Assets\holy_resolve.png" />
+    <None Remove="Assets\holy_symbol.png" />
+    <None Remove="Assets\holy_touch.png" />
+    <None Remove="Assets\holy_weapon.png" />
+    <None Remove="Assets\hospice.png" />
+    <None Remove="Assets\hunt.png" />
+    <None Remove="Assets\icy_fingers.png" />
+    <None Remove="Assets\identify.png" />
+    <None Remove="Assets\invigorate.png" />
+    <None Remove="Assets\invisibility.png" />
+    <None Remove="Assets\jig.png" />
+    <None Remove="Assets\karahols_curse.png" />
+    <None Remove="Assets\killing_fields.png" />
+    <None Remove="Assets\light.png" />
+    <None Remove="Assets\lightning_bolt.png" />
+    <None Remove="Assets\lightning_wall.png" />
+    <None Remove="Assets\magic_shield.png" />
+    <None Remove="Assets\major_heal.png" />
+    <None Remove="Assets\mana_bomb.png" />
+    <None Remove="Assets\mana_convergence.png" />
+    <None Remove="Assets\mana_focus.png" />
+    <None Remove="Assets\mark_of_dishonor.png" />
+    <None Remove="Assets\martyrs_battleground.png" />
+    <None Remove="Assets\melancholy.png" />
+    <None Remove="Assets\mend.png" />
+    <None Remove="Assets\minor_heal.png" />
+    <None Remove="Assets\mirth.png" />
+    <None Remove="Assets\mystic_touch.png" />
+    <None Remove="Assets\night_vision.png" />
+    <None Remove="Assets\node_burst.png" />
+    <None Remove="Assets\poison_fog.png" />
+    <None Remove="Assets\portal_of_life.png" />
+    <None Remove="Assets\profane_resonance.png" />
+    <None Remove="Assets\purge.png" />
+    <None Remove="Assets\purify.png" />
+    <None Remove="Assets\qorbane.png" />
+    <None Remove="Assets\rejuvenate.png" />
+    <None Remove="Assets\relay.png" />
+    <None Remove="Assets\remove_curse.png" />
+    <None Remove="Assets\rescue.png" />
+    <None Remove="Assets\resist_acid.png" />
+    <None Remove="Assets\resist_magic.png" />
+    <None Remove="Assets\resist_poison.png" />
+    <None Remove="Assets\resist_shock.png" />
+    <None Remove="Assets\restorate.png" />
+    <None Remove="Assets\reveal.png" />
+    <None Remove="Assets\ring_of_flames.png" />
+    <None Remove="Assets\sacred_resonance.png" />
+    <None Remove="Assets\sand_storm.png" />
+    <None Remove="Assets\seance.png" />
+    <None Remove="Assets\shadow_rift.png" />
+    <None Remove="Assets\shalille_bane.png" />
+    <None Remove="Assets\shatter.png" />
+    <None Remove="Assets\shatterlock.png" />
+    <None Remove="Assets\shocking_fury.png" />
+    <None Remove="Assets\shroud.png" />
+    <None Remove="Assets\silence.png" />
+    <None Remove="Assets\spellbane.png" />
+    <None Remove="Assets\spider_web.png" />
+    <None Remove="Assets\splash_of_acid.png" />
+    <None Remove="Assets\spore_burst.png" />
+    <None Remove="Assets\super_strength.png" />
+    <None Remove="Assets\swap.png" />
+    <None Remove="Assets\sweep.png" />
+    <None Remove="Assets\touch_of_flame.png" />
+    <None Remove="Assets\truce.png" />
+    <None Remove="Assets\truth.png" />
+    <None Remove="Assets\umbrella.png" />
+    <None Remove="Assets\unholy_resolve.png" />
+    <None Remove="Assets\unholy_weapon.png" />
+    <None Remove="Assets\vampiric_drain.png" />
+    <None Remove="Assets\warp_time.png" />
+    <None Remove="Assets\winds.png" />
+    <None Remove="Assets\withstand_fire.png" />
+    <None Remove="Assets\zap.png" />
+    <None Remove="data.backup.ini" />
+    <None Remove="data.ini" />
     <None Remove="favicon.ico" />
     <None Remove="icon.ico" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Assets\10.png">
+    <Content Include="Assets\acid_touch.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\11.png">
+    <Content Include="Assets\animate.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\12.png">
+    <Content Include="Assets\anti_magic_aura.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\9.png">
+    <Content Include="Assets\armor_of_gort.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\8.png">
+    <Content Include="Assets\blast_of_fire.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\7.png">
+    <Content Include="Assets\bless.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\6.png">
+    <Content Include="Assets\blind.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\5.png">
+    <Content Include="Assets\blink.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\4.png">
+    <Content Include="Assets\blood_inheritance.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\3.png">
+    <Content Include="Assets\bond.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\2.png">
+    <Content Include="Assets\bramble_wall.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\1.png">
+    <Content Include="Assets\breath_of_life.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\brittle.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\civility.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\cloak.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\concilation.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\create_food.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\create_weapon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\crystalize_mana.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\cure_disease.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\cure_poison.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\curse_weapon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\darkness.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\dazzle.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\death_link.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\defile.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\deflect.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\detect_evil.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\detect_good.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\detect_invisible.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\discordance.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\disharmony.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\dispell_illusion.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\dispel_illusion.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\distill.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\eagle_eyes.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\earthquake.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\empty.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\enchant_weapon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\enfeeble.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\explosive_frost.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\fade.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\final_rites.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\fireball.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\firewall.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\fog.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\forces_of_light.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\free_action.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\gaze_of_the_basilisk.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\glow.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\haste.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\heat.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\hold.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\holy_resolve.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\holy_symbol.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\holy_touch.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\holy_weapon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\hospice.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\hunt.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\icy_fingers.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\identify.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\invigorate.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\invisibility.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\jig.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\karahols_curse.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\killing_fields.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\light.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\lightning_bolt.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\lightning_wall.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\magic_shield.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\major_heal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\mana_bomb.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\mana_convergence.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\mana_focus.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\mark_of_dishonor.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\martyrs_battleground.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\melancholy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\minor_heal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\mirth.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\mystic_touch.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\night_vision.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\node_burst.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\poison_fog.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\portal_of_life.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\profane_resonance.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\purge.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\purify.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\qorbane.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\rejuvenate.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\relay.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\mend.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\remove_curse.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\rescue.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\resist_acid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\resist_magic.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\resist_poison.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\resist_shock.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\restorate.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\reveal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\ring_of_flames.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\sacred_resonance.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\sand_storm.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\seance.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\shadow_rift.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\shalille_bane.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\shatter.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\shatterlock.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\shocking_fury.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\shroud.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\silence.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\spellbane.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\spider_web.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\splash_of_acid.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\spore_burst.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\super_strength.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\swap.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\sweep.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\touch_of_flame.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\truce.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\truth.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\umbrella.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\unholy_resolve.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\unholy_weapon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\vampiric_drain.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\warp_time.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data.backup.ini">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="icon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="data.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\winds.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\withstand_fire.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\zap.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

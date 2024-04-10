@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using Timer = System.Windows.Forms.Timer;
 using WinFormsApp1;
+using System.Drawing.Imaging;
 
 namespace WinFormsApp1
 {
@@ -264,45 +265,56 @@ namespace WinFormsApp1
             // Draw text
             base.OnPaint(e);
 
-            /*using (Pen pen = new Pen(Color.White, 1))
+            // Fundo
+            /*Color opaqueColor = Color.FromArgb(128, 50, 0, 0);
+            using (SolidBrush brush = new(opaqueColor))
+                e.Graphics.FillRectangle(brush, new Rectangle(0, 0, Width - 1, Height - 1));*/
+
+            // Borda
+            /*using (Pen pen = new Pen(Color.LightGray, 1))
             {
                 e.Graphics.DrawRectangle(pen, new Rectangle(0, 0, Width - 1, Height - 1));
             }*/
 
-            using (Font font = new Font("Arial", 12))
-            {
+            using Font font = new("Arial", 12);
 
-                int amount = 40;
-                int pastF10Offset = 3;
-                Setup programInstance = new Setup();
-                for (var i = 0; i < programInstance.SelectedSpells.Count; i++) 
+            int amount = 40;
+            int offsetImage = 2;
+            Setup programInstance = new Setup();
+            for (var i = 0; i < programInstance.SelectedSpells.Count; i++)
+            {
+                e.Graphics.DrawString("F" + (i + 1) + " ", font, Brushes.Yellow, new Point(((i + (amount - (i >= 9 ? 5 : 2)))), 25));
+
+                // Load and draw the image from a file
+                string spellName = programInstance.SelectedSpells[i].Name;
+                string imagePath = Path.Combine(Application.StartupPath, "Assets", spellName + ".png");
+
+                if (File.Exists(imagePath))
+                {
+                    using Image image = Image.FromFile(imagePath);
+                    int desiredWidth = 21;
+
+                    Rectangle imageRect = new Rectangle((i + amount), 50, 24, 24);
+
+                    /*Color opaqueColor2 = Color.FromArgb(255, 100, 150, 200);
+                    using (SolidBrush brush = new(opaqueColor2))
+                        e.Graphics.FillRectangle(brush, imageRect);*/
+
+                    // int newHeight = (int)(image.Height * ((float)desiredWidth / image.Width));
+
+                    e.Graphics.DrawImage(image, new Rectangle((i + amount) + offsetImage, (50) + offsetImage, desiredWidth, desiredWidth));
+
+                    
+                    using Pen pen = new(Color.LightGray, 1);
+
+                    
+                    e.Graphics.DrawRectangle(pen, imageRect);         
+                } else
                 {
 
-                    e.Graphics.DrawString("F" + (i + 1) + " ", font, Brushes.White, new Point(((i + (amount - (i >= 9 ? 5 : 2)))), 25));
-
-                    // Load and draw the image from a file
-                    string spellName = programInstance.SelectedSpells[i].Name;
-                    string imagePath = Path.Combine(Application.StartupPath, "Assets", spellName +".png");
-
-                    if (File.Exists(imagePath))
-                    {
-                        using (Image image = Image.FromFile(imagePath))
-                        {
-                            Rectangle imageRect = new Rectangle((i + amount), 50, image.Width, image.Height);
-
-                            e.Graphics.DrawImage(image, new Point((i + amount), 50));
-
-                            using (Pen pen = new Pen(Color.White, 1))
-                            {
-                                e.Graphics.DrawRectangle(pen, imageRect);
-                            }
-                            
-                        }
-                    }
-
-                    amount += 40;
                 }
- 
+
+                amount += 40;
             }
         }
 

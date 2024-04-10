@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MeridianSpellOrders</id>
+    <version>1.0.0</version>
+    <authors>MeridianSpellOrders</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="e6eeb1285a45d0b73ead96eb9cf4b473ab51459a" />
+    <dependencies>
+      <group targetFramework="net8.0-windows7.0" />
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net8.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+    </frameworkReferences>
+    <contentFiles>
+      <files include="any/net8.0-windows7.0/Assets/bless.png" buildAction="Content" />
+      <files include="any/net8.0-windows7.0/Assets/blink.png" buildAction="Content" />
+      <files include="any/net8.0-windows7.0/Assets/create_food.png" buildAction="Content" />
+      <files include="any/net8.0-windows7.0/Assets/create_weapon.png" buildAction="Content" />
+      <files include="any/net8.0-windows7.0/Assets/deflect.png" buildAction="Content" />
+      <files include="any/net8.0-windows7.0/Assets/detect_invisible.png" buildAction="Content" />
+      <files include="any/net8.0-windows7.0/Assets/discordance.png" buildAction="Content" />
+      <files include="any/net8.0-windows7.0/Assets/dispell_illusion.png" buildAction="Content" />
+      <files include="any/net8.0-windows7.0/Assets/eagle_eyes.png" buildAction="Content" />
+      <files include="any/net8.0-windows7.0/Assets/empty.png" buildAction="Content" />
+      <files include="any/net8.0-windows7.0/Assets/enchant_weapon.png" buildAction="Content" />
+      <files include="any/net8.0-windows7.0/Assets/free_action.png" buildAction="Content" />
+      <files include="any/net8.0-windows7.0/Assets/glow.png" buildAction="Content" />
+      <files include="any/net8.0-windows7.0/Assets/haste.png" buildAction="Content" />
+      <files include="any/net8.0-windows7.0/Assets/magic_shield.png" buildAction="Content" />
+      <files include="any/net8.0-windows7.0/Assets/mana_bomb.png" buildAction="Content" />
+      <files include="any/net8.0-windows7.0/Assets/martyrs_battleground.png" buildAction="Content" />
+      <files include="any/net8.0-windows7.0/Assets/night_vision.png" buildAction="Content" />
+      <files include="any/net8.0-windows7.0/Assets/relay.png" buildAction="Content" />
+      <files include="any/net8.0-windows7.0/Assets/mend.png" buildAction="Content" />
+      <files include="any/net8.0-windows7.0/Assets/resist_poison.png" buildAction="Content" />
+      <files include="any/net8.0-windows7.0/Assets/shroud.png" buildAction="Content" />
+      <files include="any/net8.0-windows7.0/Assets/super_strength.png" buildAction="Content" />
+      <files include="any/net8.0-windows7.0/data.backup.ini" buildAction="Content" />
+      <files include="any/net8.0-windows7.0/icon.ico" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\bin\Release\net8.0-windows\MeridianSpellOrders.runtimeconfig.json" target="lib\net8.0-windows7.0\MeridianSpellOrders.runtimeconfig.json" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\bin\Release\net8.0-windows\MeridianSpellOrders.dll" target="lib\net8.0-windows7.0\MeridianSpellOrders.dll" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\bless.png" target="content\Assets\bless.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\bless.png" target="contentFiles\any\net8.0-windows7.0\Assets\bless.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\blink.png" target="content\Assets\blink.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\blink.png" target="contentFiles\any\net8.0-windows7.0\Assets\blink.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\create_food.png" target="content\Assets\create_food.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\create_food.png" target="contentFiles\any\net8.0-windows7.0\Assets\create_food.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\create_weapon.png" target="content\Assets\create_weapon.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\create_weapon.png" target="contentFiles\any\net8.0-windows7.0\Assets\create_weapon.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\deflect.png" target="content\Assets\deflect.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\deflect.png" target="contentFiles\any\net8.0-windows7.0\Assets\deflect.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\detect_invisible.png" target="content\Assets\detect_invisible.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\detect_invisible.png" target="contentFiles\any\net8.0-windows7.0\Assets\detect_invisible.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\discordance.png" target="content\Assets\discordance.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\discordance.png" target="contentFiles\any\net8.0-windows7.0\Assets\discordance.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\dispell_illusion.png" target="content\Assets\dispell_illusion.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\dispell_illusion.png" target="contentFiles\any\net8.0-windows7.0\Assets\dispell_illusion.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\eagle_eyes.png" target="content\Assets\eagle_eyes.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\eagle_eyes.png" target="contentFiles\any\net8.0-windows7.0\Assets\eagle_eyes.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\empty.png" target="content\Assets\empty.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\empty.png" target="contentFiles\any\net8.0-windows7.0\Assets\empty.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\enchant_weapon.png" target="content\Assets\enchant_weapon.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\enchant_weapon.png" target="contentFiles\any\net8.0-windows7.0\Assets\enchant_weapon.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\free_action.png" target="content\Assets\free_action.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\free_action.png" target="contentFiles\any\net8.0-windows7.0\Assets\free_action.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\glow.png" target="content\Assets\glow.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\glow.png" target="contentFiles\any\net8.0-windows7.0\Assets\glow.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\haste.png" target="content\Assets\haste.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\haste.png" target="contentFiles\any\net8.0-windows7.0\Assets\haste.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\magic_shield.png" target="content\Assets\magic_shield.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\magic_shield.png" target="contentFiles\any\net8.0-windows7.0\Assets\magic_shield.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\mana_bomb.png" target="content\Assets\mana_bomb.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\mana_bomb.png" target="contentFiles\any\net8.0-windows7.0\Assets\mana_bomb.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\martyrs_battleground.png" target="content\Assets\martyrs_battleground.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\martyrs_battleground.png" target="contentFiles\any\net8.0-windows7.0\Assets\martyrs_battleground.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\night_vision.png" target="content\Assets\night_vision.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\night_vision.png" target="contentFiles\any\net8.0-windows7.0\Assets\night_vision.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\relay.png" target="content\Assets\relay.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\relay.png" target="contentFiles\any\net8.0-windows7.0\Assets\relay.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\mend.png" target="content\Assets\mend.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\mend.png" target="contentFiles\any\net8.0-windows7.0\Assets\mend.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\resist_poison.png" target="content\Assets\resist_poison.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\resist_poison.png" target="contentFiles\any\net8.0-windows7.0\Assets\resist_poison.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\shroud.png" target="content\Assets\shroud.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\shroud.png" target="contentFiles\any\net8.0-windows7.0\Assets\shroud.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\super_strength.png" target="content\Assets\super_strength.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\Assets\super_strength.png" target="contentFiles\any\net8.0-windows7.0\Assets\super_strength.png" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\data.backup.ini" target="content\data.backup.ini" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\data.backup.ini" target="contentFiles\any\net8.0-windows7.0\data.backup.ini" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\icon.ico" target="content\icon.ico" />
+    <file src="D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\icon.ico" target="contentFiles\any\net8.0-windows7.0\icon.ico" />
+  </files>
+</package>

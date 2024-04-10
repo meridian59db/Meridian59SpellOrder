@@ -38,18 +38,6 @@ D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\obj\Debug\net8.0-windows\Mer
 D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\obj\Debug\net8.0-windows\refint\MeridianSpellOrders.dll
 D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\obj\Debug\net8.0-windows\MeridianSpellOrders.pdb
 D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\bin\Debug\net8.0-windows\MeridianSpellOrders.exe
-D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\bin\Debug\net8.0-windows\Assets\10.png
-D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\bin\Debug\net8.0-windows\Assets\11.png
-D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\bin\Debug\net8.0-windows\Assets\12.png
-D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\bin\Debug\net8.0-windows\Assets\9.png
-D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\bin\Debug\net8.0-windows\Assets\8.png
-D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\bin\Debug\net8.0-windows\Assets\7.png
-D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\bin\Debug\net8.0-windows\Assets\6.png
-D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\bin\Debug\net8.0-windows\Assets\5.png
-D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\bin\Debug\net8.0-windows\Assets\4.png
-D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\bin\Debug\net8.0-windows\Assets\3.png
-D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\bin\Debug\net8.0-windows\Assets\2.png
-D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\bin\Debug\net8.0-windows\Assets\1.png
 D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\bin\Debug\net8.0-windows\icon.ico
 D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\bin\Debug\net8.0-windows\MeridianSpellOrders.deps.json
 D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\bin\Debug\net8.0-windows\MeridianSpellOrders.runtimeconfig.json
@@ -57,3 +45,5 @@ D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\bin\Debug\net8.0-windows\Mer
 D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\bin\Debug\net8.0-windows\MeridianSpellOrders.pdb
 D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\obj\Debug\net8.0-windows\MeridianSpellOrders.genruntimeconfig.cache
 D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\obj\Debug\net8.0-windows\ref\MeridianSpellOrders.dll
+D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\bin\Debug\net8.0-windows\data.ini
+D:\Github\Meridian59SpellOrder\Meridian59SpellOrder\obj\Debug\net8.0-windows\MeridianSpellOrders.g.resources
